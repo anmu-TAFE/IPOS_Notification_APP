@@ -12,13 +12,13 @@ Build a **document management system**. It must support:
 
 In your group **analyse the requirements**. For each, decide which pattern or technique is appropriate:
 
-| Feature                                         | What pattern or technique is appropriate? |
+| Feature                                         | What pattern or technique is appropriate? | Agreed by: 
 | ----------------------------------------------- | ----------------------------------------- |
-| 1. Create users based on their role             |                                           |
-| 2. Trigger actions on document upload           |                                           |
-| 3. Log when users do something                  |                                           |
-| 4. Process large logs line-by-line              |                                           |
-| 5. Fetch data from an external API concurrently |                                           |
+| 1. Create users based on their role             |    Factory Pattern                        | (Antonio, Kent)
+| 2. Trigger actions on document upload           |    Observator                             | (Antonio, Kent)
+| 3. Log when users do something                  |    Decorator                              | (Antonio, Kent)
+| 4. Process large logs line-by-line              |    Generator                              | (Antonio, Kent)
+| 5. Fetch data from an external API concurrently |    Async / Await                          | (Antonio, Kent)
 
 ---
 
