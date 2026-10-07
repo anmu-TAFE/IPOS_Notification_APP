@@ -1,7 +1,9 @@
 import logging
 
 # Setup basic config for logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename="actions.log", 
+                    level=logging.INFO, 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Our decorator
 def action_logger(func):
@@ -21,4 +23,10 @@ def action_logger(func):
 def upload_document(user, filename):
     print(f"{user} uploaded {filename}")
 
+@action_logger
+def delete_document(user, filename):
+    print(f"{user} deleted {filename}")
+
 upload_document("John", "report.pdf")
+upload_document("Sarah", "notes.pdf")
+delete_document("Alex", "old_report.pdf")

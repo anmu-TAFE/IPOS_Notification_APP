@@ -1,3 +1,3 @@
-John uploaded report.pdf
-Sarah deleted notes.pdf
-Alex viewed document.pdf
+2026-10-07 09:59:46,419 - INFO - User: John | Action: upload_document
+2026-10-07 09:59:46,419 - INFO - User: Sarah | Action: upload_document
+2026-10-07 09:59:46,420 - INFO - User: Alex | Action: delete_document
